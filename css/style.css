@@ -1,0 +1,115 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border:none;
+}
+a {text-decoration: none;color:#505b65; }
+ul {list-style: none;}
+body {background: #efefef;
+	font-family: Verdana,Geneva,sans-serif;
+ 	font-size: 12px;
+    color: #505b65;
+    height: 1000px;
+}
+#main {position: relative;}
+.box {padding: 15px 0 0 15px;float: left;position: absolute;}
+.pic {padding: 10px;border: 1px solid #ccc;border-radius:5px;box-shadow: 0 0 5px #ccc;}
+.pic img {width: 165px;height: auto;}
+
+/*topnav布局开始*/
+.topnav {height:55px;background:#fefefe;border-bottom: 1px solid #d8d8d8;}
+.topnav .category{width: 44px;height: 30px;position:absolute;left:100px;top:13px;background: #f4f4f4;border-radius:4px;}
+#decoration {display: block;width: 16px;height: 16px;background:url(../images/icon.png) no-repeat -180px -195px; margin:7px 0 0 14px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) inset;
+
+}
+#decoration:hover {background-position: -180px -230px;}
+
+.topnav .search{line-height: 56px;position: absolute;left: 154px;}
+.topnav .search .s {width: 228px;height: 30px;background: #fafafa;border:1px solid #ddd;border-radius:2px;text-indent: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) inset;
+}
+.topnav .search .sosuo {width: 20px;height: 20px;background: url(../images/icon.png) no-repeat -177px -262px;text-indent: -9999px;position: absolute;right:6px;top:18px;}
+.topnav .search .sosuo:hover {cursor:pointer;background-position: -177px -296px;}
+.topnav .action{height:56px;line-height:56px;position: absolute;right: 64px;}
+.topnav .action a {padding: 0 6px;}
+
+#nav {width:681px;overflow:hidden;background:white;position: absolute;left: 100px;top: 66px;z-index: 100;display: none;border-radius: 4px;}
+#center,#list {font-size: 14px;line-height: 28px;}
+#center {width: 140px;float: left;padding: 24px 0 0 30px;}
+#list {width: 510px;float: left;border-left: 1px solid #ededed;padding:24px 0 30px 0;}
+#list li {width: 170px;float: left;}
+#list li a {padding-left: 34px;}
+
+/*登录遮罩层*/
+#mask {
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;filter:alpha(opacity=75);
+	position:fixed;
+	/*为了兼容IE6，IE6不支持相对定位*/
+	position: _absolute;
+	z-index: 999;
+	background: #4c4d48;
+	display: none;
+}
+#login {
+	width: 520px;
+	padding: 30px 0 10px;
+	border-radius: 5px;
+	background: #f7f7f7;
+	font-size: 16px;
+	text-align: center;
+	position: fixed;
+	/*为了兼容IE6，IE6不支持相对定位*/
+	position: _absolute;
+	z-index: 1000;
+	display: none;
+
+}
+#login .words{}
+.buttons a {display: inline-block;width: 70px;height: 70px;margin-right: 20px;background: url(../images/login_icons.png) no-repeat 0 0;margin: 15px 0;}
+.buttons .weibo {}
+.buttons a.weibo:hover {background-position: 0 -90px;}
+.buttons .qzone {background-position: -90px 0;}
+.buttons a.qzone:hover {background-position: -90px -90px;}
+.buttons .douban {background-position: -180px 0;}
+.buttons a.douban:hover {background-position: -180px -90px;}
+.buttons .renren {background-position: -270px 0;}
+.buttons a.renren:hover {background-position: -270px -90px;}
+
+#loginwrap {width:280px;margin: 0 auto;}
+#loginwrap .with-line {margin-bottom: 15px;}
+#loginwrap .maillogin {}
+#loginwrap .clear-input {
+	width: 100%;height: 36px;background:#FCFCFC;text-indent: 10px;margin-bottom: 10px;border:1px solid #ccc;border-radius:3px;font-size: 16px;box-shadow: inset 0 1px 2px rgba(0,0,0,.05); 
+}
+.maillogin .btn {
+	width: 100%;display: inline-block;height: 36px;line-height: 36px;
+	color:#fff;
+	border: 1px solid #C90000;
+	border-radius:3px;
+	background: #E53E49;
+	background: -webkit-linear-gradient(#E53E49, #D43636);
+	background: -o-linear-gradient(#E53E49, #D43636);
+	background: linear-gradient(#E53E49, #D43636);
+}
+a.btn:hover {background:#ed5359;}
+
+.moreact {overflow: hidden;margin-top: 16px;}
+.find-pass {color: #9A0000;float: left;font-size: 14px;}
+.switch-back {color: #444;float: right;font-size: 14px;}
+.switch-back a {color: #9A0000;}
+
+#imgmask {position: fixed;z-index: 2000;}
+#imgmask img{width:800px;}
+
+#cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1999;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+	background: black;
+}

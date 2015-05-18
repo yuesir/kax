@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>文件上传</title>
+	<title>文件上传 测试</title>
 </head>
 <body>
 	<?php
